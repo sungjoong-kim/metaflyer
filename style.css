@@ -1,0 +1,563 @@
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #666666;
+}
+
+/* 라인 */
+hr {
+  border: 0;
+  border-top: 1px solid #f1f3f9;
+  margin: 0;
+}
+
+/* 헤더최상단 */
+
+.tnd {
+  background-color: #f7f7f7;
+  padding: 0px;
+  width: 100%;
+  height: 30px;
+}
+
+.tnd__header__menu {
+  display: flex;
+  margin-left: auto;
+  color: #666666;
+}
+
+.tnd__header__menu li {
+  font-size: 11px;
+  color: #666666;
+  padding: 8px 10px;
+}
+
+.tnd__header__menu li {
+  font-size: 11px;
+  color: #666666;
+  padding: 8px 10px;
+}
+
+/* 헤더 로고+메뉴 */
+
+.header {
+}
+
+.container {
+  display: flex;
+  padding: 0px 10px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.container_header {
+  padding: 5px 10px 5px 10px;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.header__logo {
+  width: 250px;
+  height: auto;
+}
+
+.header__menu {
+  display: flex;
+  padding-left: 0;
+}
+
+.header__menu li {
+  font-size: 13px;
+  padding: 8px 10px;
+}
+
+.header__menu li:hover {
+  color: #d2d2d2;
+}
+
+/* ----- 메뉴바 ----- Start */
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background: #fff;
+  top: 0;
+  opacity: 0.97;
+}
+
+.navbar__wrap {
+  position: relative;
+}
+
+.navbar_empty {
+  height: 50px;
+}
+
+#menu {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  transition: height 0.08s;
+}
+
+#menu:hover {
+  height: 362px;
+}
+
+#menu > ul > li {
+  width: 19.68%;
+  display: inline-block;
+  position: relative;
+}
+
+#menu ul li a:hover {
+  color: #5f90db;
+  font-weight: bold;
+}
+
+#menu > ul > li > a {
+  display: block;
+  padding: 10px 40px;
+  font-weight: 500;
+}
+
+#menu > ul > li:hover ul {
+  display: block;
+}
+
+.submenu {
+  position: absolute;
+  left: 0px;
+  top: 44px;
+  width: 100%;
+  height: 318px;
+  font-size: 15px;
+  background-color: #fff;
+  border-top: 3px solid transparent;
+}
+
+#menu ul li a:hover + .submenu,
+.submenu:hover {
+  background-color: #f7fafd;
+  border-top: 3px solid #5f90db;
+  box-sizing: border-box;
+}
+
+.submenu a:hover {
+  color: #5f90db;
+}
+
+#menu ul ul a {
+  display: block;
+  padding: 15px 10px;
+}
+
+#menu ul ul li:first-child a {
+  border-top: none;
+}
+
+.nav__item__icon {
+  float: left;
+  width: 50px !important;
+  background: #585858;
+}
+
+.nav__item__icon a {
+  color: #ffffff;
+}
+/* ----- 메뉴바 ----- End */
+
+/* ----- 특수문자 ----- Start */
+.tt {
+  position: relative;
+}
+.tt ~ .tt::before {
+  position: absolute;
+  content: "·";
+  top: 25%;
+  left: -2.7px;
+}
+
+.ff {
+  position: relative;
+}
+.ff ~ .ff::before {
+  position: absolute;
+  content: "·";
+  top: 0%;
+  left: -13.7px;
+}
+/* ----- 특수문자 ----- End */
+
+/* ----- 로그인 ----- Start */
+
+.login_header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login__box {
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background-color: #98c3e2;
+  float: left;
+}
+
+.login__menu {
+  width: 35%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.login__text {
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 10px;
+  margin-top: -4px;
+}
+
+.login {
+  width: 51%;
+  float: right;
+}
+
+.login__id {
+  width: 34%;
+  height: 37px;
+  border-radius: 4px;
+  border: 1px solid #e4e4e4;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.login__pw {
+  width: 34%;
+  height: 37px;
+  border-radius: 4px;
+  border: 1px solid #e4e4e4;
+  font-size: 14px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.login__button {
+  width: 26%;
+  height: 37px;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  background-color: #118ade;
+  margin-left: 10px;
+}
+
+.login__button:hover {
+  background-color: #0b598f;
+}
+
+/* ----- 로그인 ----- End */
+
+/* ----- 메인슬라이드 ----- Start */
+@charset "utf-8";
+
+html,
+body {
+  font-size: 18px;
+  color: #666;
+}
+
+/*==========*/
+#container {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 2rem auto 0 auto;
+  width: 100%;
+  height: 400px;
+}
+
+/*pager*/
+.arrow {
+  position: absolute;
+  z-index: 200;
+  box-sizing: border-box;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1.8rem 1rem 2rem 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  opacity: 10%;
+}
+
+.arrow:hover {
+  opacity: 100%;
+  transition: 0.4s;
+}
+
+.arrow.prev {
+  left: 0;
+}
+.arrow.next {
+  right: 0;
+}
+
+/*slideNUM*/
+.slideNum {
+  position: absolute;
+  z-index: 100;
+  top: 1.5rem;
+  left: 2rem;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+#thisSlide {
+  color: crimson;
+}
+
+/*slides*/
+.slides {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  animation: fadein 1.5s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*=============*/
+#pager {
+  position: relative;
+  margin-top: -26px;
+  text-align: center;
+}
+
+#pager span {
+  position: relative;
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-left: 5px;
+  background-color: #d5dbe2;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: width 0.3s;
+}
+#pager span.on {
+  width: 3rem;
+  border-radius: 25px;
+  background-color: #5f90db;
+}
+
+/*===============*/
+.slideStopStart {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  background-color: #666;
+  color: #fff;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+/* ----- 메인슬라이드 ----- End */
+
+/* ----- 기능아이콘 ----- Start */
+
+.menu__icon {
+  border-top: 1px solid #f1f3f9;
+  border-bottom: 1px solid #f1f3f9;
+  height: 190px;
+}
+.item {
+  display: inline-grid;
+  align-items: center;
+  justify-items: center;
+  padding: 20px;
+  width: 19%;
+  border: 1px solid #f1f3f9;
+  height: 190px;
+}
+
+.item a {
+  font-size: 17px;
+}
+
+/* 게시판 */
+
+/* container */
+#idx_top {
+  width: 100%;
+  padding: 150px 0;
+  text-align: center;
+}
+
+#idx_top strong {
+  font-size: 60px;
+  letter-spacing: -2px;
+}
+
+#idx_top p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+#idx_board_wrap {
+  padding: 30px 0;
+}
+
+#idx_board_wrap > div {
+  width: 100%;
+  min-width: 1000px;
+  max-width: 1080px;
+  margin: 0 auto;
+  font-size: 0;
+  padding: 0 10px;
+}
+
+.idx_board {
+  display: inline-block;
+  width: 49%;
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 6px;
+}
+
+#idx_board_wrap > div > div:nth-child(even) {
+  margin-left: 2%;
+}
+
+#idx_board_wrap > div > div:nth-child(3),
+#idx_board_wrap > div > div:nth-child(4) {
+  margin-top: 30px;
+}
+
+.idx_board .title {
+  position: relative;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.idx_board .title a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.idx_board .title .name {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+
+.idx_board .title .more {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+}
+
+.idx_board .title .more img {
+  width: 18px;
+  margin-left: 3px;
+}
+
+.idx_board .list {
+  padding: 20px;
+}
+
+.idx_board .list ul li {
+  margin-top: 10px;
+  padding-left: 7px;
+  font-size: 0;
+}
+.idx_board .list ul li:first-child {
+  margin-top: 0;
+}
+
+.idx_board .list a,
+.idx_board .list span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.idx_board .list a {
+  width: 80%;
+  font-size: 14px;
+}
+
+.idx_board .list span {
+  width: 20%;
+  text-align: right;
+  font-size: 12px;
+  color: #777;
+}
+
+.board__image {
+  width: 250px;
+  height: 185px;
+  padding: 13px;
+}
+.board__text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* 푸터 */
+footer {
+  height: 250px;
+  background-color: #eef8fd;
+}
+
+.footer__logo {
+  margin-top: 50px;
+  width: 320px;
+}
+
+.footer__text {
+  word-spacing: -1px;
+  margin-top: 35px;
+  width: 74%;
+  font-size: 14px;
+}
+
+.footer__button {
+  width: 34%;
+  margin-top: 35px;
+  display: flex;
+  font-size: 14px;
+}
+
+.footer__button li {
+  word-spacing: -1px;
+  margin-left: 20px;
+}
+
+.footer__button li:hover {
+  font-weight: bold;
+  color: #118ade;
+  cursor: pointer;
+}

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>ICE Devcenter</title>
+    <script src="https://kit.fontawesome.com/4eea417a7f.js" crossorigin="anonymous"></script>
+    <scrip src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></scrip>
+</head>
+
+<body>
+    <header class="tnd">
+        <div class="container">
+            <div class="tnd__header__menu">
+                <li class="tt"><a href="">회원가입</a></li>
+                <li class="tt"><a href="">아이디찾기</a></li>
+                <li class="tt"><a href="">비밀번호찾기</a></li>
+            </div>
+        </div>
+    </header>
+
+
+    <header class="header">
+        <div class="container container_header">
+            <h1 class="header__logo">
+                <a href="index.html">
+                    <img src="image/ICE Devcneter_logo.svg"></a>
+            </h1>
+            <ul class="header__menu">
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">고객지원</a></li>
+                <li><a href="#">오시는길</a></li>
+            </ul>
+        </div>
+        <hr/>
+    </header>
+    <!-- 네비게이션 -->
+    <div class="navbar__wrap">
+        <nav class="navbar_empty"></nav>
+        <nav class="navbar">
+            <div class="container">
+                <nav id="menu">
+                    <ul>
+                        <li>
+                            <a href="#">ICE소개</a>
+                            <ul class="submenu">
+                                <li><a href="#">소개</a></li>
+                                <li><a href="#">개요</a></li>
+                                <li><a href="#">이키텍처</a></li>
+                                <li><a href="#">구축사례</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">개발가이드</a>
+                            <ul class="submenu">
+                                <li><a href="#">설치하기</a></li>
+                                <li><a href="#">개발환경설정</a></li>
+                                <li><a href="#">Backend Core</a></li>
+                                <li><a href="#">Front Office</a></li>
+                                <li><a href="#">User Manual</a></li>
+                                <li><a href="#">릴리즈노트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">개발자교육 </a>
+                            <ul class="submenu">
+                                <li><a href="#">교육신청</a></li>
+                                <li><a href="#">교육자료</a></li>
+                                <li><a href="#">영상자료</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">기술지원</a>
+                            <ul class="submenu">
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">묻고답하기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">고객지원</a>
+                            <ul class="submenu">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">개인정보처리방침</a></li>
+                                <li><a href="#">문의하기</a></li>
+                                <li><a href="#">오시는길</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </div>
+    <hr />
+    <!-- 로그인 -->
+    <section>
+        <div class="login__box">
+            <div class="container login_header">
+                <div class="login__menu">
+                    <img src="image/enter.png">
+                    <span style="color:white;" class="login__text">안녕하세요 방문해주셔서 감사합니다</span>
+                </div>
+                <div class="login">
+                    <input type="text" class="login__id" placeholder="아이디" maxlength="15"></input>
+                    <input type="password" class="login__pw" placeholder="비밀번호" name="pass" maxlength="16"></input>
+                    <input type="button" class="login__button" value="로그인" onclick="alert('개발전입니다')"></input>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 메인슬라이드 -->
+    <section id="container">
+        <div class="arrow prev" onclick="prevNext(-1)">&#10094;</div>
+        <div class="arrow next" onclick="prevNext(1)">&#10095;</div>
+
+        <div class="slideNum" style="opacity: 0;">
+            <span id="thisSlide">0</span> / <span id="allSlide">0</span>
+        </div>
+
+        <article class="slides">
+            <img src="image/main_slide01.jpg" alt="">
+        </article>
+        <!--1-->
+        <article class="slides">
+            <img src="image/main_slide01.jpg" alt="">
+        </article>
+        <!--2-->
+        <article class="slides">
+            <img src="image/main_slide01.jpg" alt="">
+        </article>
+        <!--3-->
+        <article class="slides">
+            <img src="image/main_slide01.jpg" alt="">
+        </article>
+        <!--4-->
+    </section>
+
+    <section id="pager">
+        <span class="dots on" onclick="currentSlide(1)"></span>
+        <span class="dots" onclick="currentSlide(2)"></span>
+        <span class="dots" onclick="currentSlide(3)"></span>
+        <span class="dots" onclick="currentSlide(4)"></span>
+    </section>
+
+    <!-- 아이콘 -->
+    <div class="menu__icon">
+        <div class="container">
+            <a href="#">
+                <div class="item">
+                    <img src="image/icon1.png">
+                    <a href="#">설치하기</a>
+                </div>
+            </a>
+            <a href="#">
+                <div class="item">
+                    <img src="image/icon6.png">
+                    <a href="#">개발가이드</a>
+                </div>
+            </a>
+            <a href="#">
+                <div class="item">
+                    <img src="image/icon3.png">
+                    <a href="#">교육신청</a>
+                </div>
+            </a>
+            <a href="#">
+                <div class="item">
+                    <img src="image/icon2.png">
+                    <a href="#">교육자료</a>
+                </div>
+            </a>
+            <a href="#">
+                <div class="item">
+                    <img src="image/icon4.png">
+                    <a href="#">FAQ</a>
+                </div>
+            </a>
+            <a href="#">
+                <div class="item">
+                    <img src="image/icon5.png">
+                    <a href="#">묻고답하기</a>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- 게시판 -->
+    <div id="idx_board_wrap">
+        <div>
+            <div class="idx_board">
+                <div class="title">
+                    <a href="#" class="name">공지사항</a>
+                    <a href="#" class="more"><img src="image/plus.png" alt="더 보기"></a>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <a href="#">글 제목이 들어갑니다.</a>
+                            <span>2019-11-14</span>
+                        </li>
+                        <li>
+                            <a href="#">글 제목이 들어갑니다.</a>
+                            <span>2019-11-14</span>
+                        </li>
+                        <li>
+                            <a href="#">글 제목이 들어갑니다.</a>
+                            <span>2019-11-14</span>
+                        </li>
+                        <li>
+                            <a href="#">글 제목이 들어갑니다.</a>
+                            <span>2019-11-14</span>
+                        </li>
+                        <li>
+                            <a href="#">글 제목이 들어갑니다.</a>
+                            <span>2019-11-14</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="idx_board">
+                <div class="title">
+                    <a href="#" class="name">묻고답하기</a>
+                    <a href="#" class="more"><img src="image/plus.png" alt="더 보기"></a>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <a href="#">글 제목이 들어갑니다.</a>
+                            <span>2019-11-14</span>
+                        </li>
+                        <li>
+                            <a href="#">글 제목이 들어갑니다.</a>
+                            <span>2019-11-14</span>
+                        </li>
+                        <li>
+                            <a href="#">글 제목이 들어갑니다.</a>
+                            <span>2019-11-14</span>
+                        </li>
+                        <li>
+                            <a href="#">글 제목이 들어갑니다.</a>
+                            <span>2019-11-14</span>
+                        </li>
+                        <li>
+                            <a href="#">글 제목이 들어갑니다.</a>
+                            <span>2019-11-14</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="idx_board">
+                <div class="title">
+                    <a href="#" class="name">릴리즈노트</a>
+                    <a href="#" class="more"><img src="image/plus.png" alt="더 보기"></a>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <a href="#">글 제목이 들어갑니다.</a>
+                            <span>2019-11-14</span>
+                        </li>
+                        <li>
+                            <a href="#">글 제목이 들어갑니다.</a>
+                            <span>2019-11-14</span>
+                        </li>
+                        <li>
+                            <a href="#">글 제목이 들어갑니다.</a>
+                            <span>2019-11-14</span>
+                        </li>
+                        <li>
+                            <a href="#">글 제목이 들어갑니다.</a>
+                            <span>2019-11-14</span>
+                        </li>
+                        <li>
+                            <a href="#">글 제목이 들어갑니다.</a>
+                            <span>2019-11-14</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="idx_board">
+                <div class="title">
+                    <a href="#" class="name">교육동영상</a>
+                    <a href="#" class="more"><img src="image/plus.png" alt="더 보기"></a>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <a href="#">글 제목이 들어갑니다.</a>
+                            <span>2019-11-14</span>
+                        </li>
+                        <li>
+                            <a href="#">글 제목이 들어갑니다.</a>
+                            <span>2019-11-14</span>
+                        </li>
+                        <li>
+                            <a href="#">글 제목이 들어갑니다.</a>
+                            <span>2019-11-14</span>
+                        </li>
+                        <li>
+                            <a href="#">글 제목이 들어갑니다.</a>
+                            <span>2019-11-14</span>
+                        </li>
+                        <li>
+                            <a href="#">글 제목이 들어갑니다.</a>
+                            <span>2019-11-14</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    <!-- 푸터 시작 -->
+    <footer>
+        <div class="container">
+            <div class="footer__logo">
+                <img src="/image/ionhorizontal.svg">
+            </div>
+        </div>
+    <script src="https://kit.fontawesome.com/4eea417a7f.js" crossorigin="anonymous"></script>
+
+        <div class="container">
+            <div class="footer__text">
+                <p>(06234) 서울특별시 강남구 테헤란로 10길 15, 아이온빌딩&nbsp;&nbsp;
+                    <strong>T.</strong>02-3430-1200&nbsp;&nbsp;
+                    <strong>F.</strong>02-3430-1205&nbsp;&nbsp;
+                    <strong>E.</strong>ask@i-on.net
+                    <br>Copyright 2021 © I-ON Communications Co., Ltd.
+                </p>
+            </div>
+            <div class="footer__button">
+                <li class="ff"><a href="#"></a>회사소개</li>
+                <li class="ff"><a href="#"></a>개인정보처리방침</li>
+                <li class="ff"><a href="#"></a>이메일무단수집거부</li>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 스크립트시작 -->
+    <script>
+        var slides = document.getElementsByClassName('slides');
+        var dots = document.getElementsByClassName('dots');
+
+        var slideIndex = 0;
+
+        document.getElementById('allSlide').innerHTML = slides.length;
+
+
+
+        var myVar;
+
+
+        showSlides();
+
+        function showSlides() {
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+                dots[i].className = dots[i].className.replace(" on", "");
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) { slideIndex = 1; }
+
+            document.getElementById('thisSlide').innerHTML = slideIndex;
+            slides[slideIndex - 1].style.display = 'block';
+            dots[slideIndex - 1].className += ' on';
+
+            myVar = setTimeout(showSlides, 4000);
+        }//showSlides
+
+        function stopSlide() { clearTimeout(myVar); } //stopSlide
+
+        /* ========= */
+
+        function prevNext(num) {
+            stopSlide();
+            slideIndex += num;
+
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+                dots[i].className = dots[i].className.replace(" on", "");
+            }
+
+            if (slideIndex < 1) { slideIndex = slides.length; }
+            if (slideIndex > slides.length) { slideIndex = 1; }
+
+            document.getElementById('thisSlide').innerHTML = slideIndex;
+            slides[slideIndex - 1].style.display = 'block';
+            dots[slideIndex - 1].className += ' on';
+        }
+
+        /* ========= */
+        function currentSlide(num) {
+            stopSlide();
+            slideIndex = num;
+
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+                dots[i].className = dots[i].className.replace(" on", "");
+            }
+
+            document.getElementById('thisSlide').innerHTML = slideIndex;
+            slides[slideIndex - 1].style.display = 'block';
+            dots[slideIndex - 1].className += ' on';
+        }</script>
+  
+</body>
+
+
+</html>
