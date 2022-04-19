@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Title -->
+    <title>Metaflyer</title>
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- CSS Template -->
+    <link href="static/css/style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-offset="50" tabindex="0">
+    <!-- Skippy -->
+    <a id="skippy" class="sr-only sr-only-focusable u-skippy" href="#content">
+        <div class="container">
+            <span class="u-skiplink-text">Skip to main content</span>
+        </div>
+    </a>
+    <!-- End Skippy -->
+    <!-- Preload -->
+    <div id="loading" class="preloader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- End Preload -->
+    <!-- Search START -->
+    <div class="px-search-full collapse bg-dark p-3 z-index-999 position-fixed w-100" id="search-open">
+        <div class="container position-relative">
+            <div class="row vh-100 justify-content-center">
+                <div class="col-lg-8 pt-12">
+                    <h2 class="h1">
+                        <span class="d-block text-white">Search</span>
+                    </h2>
+                    <form class="position-relative w-100">
+                        <div class="mb-3 input-group">
+                            <!-- Search input -->
+                            <input class="form-control border-0 shadow-none" type="text" name="search" placeholder="What are you looking for?">
+                            <!-- Search button -->
+                            <button type="button" class="btn btn-primary shadow-none">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Search button close START -->
+                <a class="search-close" data-bs-toggle="collapse" href="javascript:void(0)" data-bs-target="#search-open" aria-expanded="true">
+                    <i class="fas fa-times p-0"></i>
+                </a>
+                <!-- Search button close END -->
+            </div>
+        </div>
+    </div>
+    <!-- Search END -->
+    <!-- Header -->
+    <header class="header-main header-dark fixed-top header-fluid">
+        <!-- End Top Header -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo-dark" src="static/img/logo.svg" title="" alt="">
+                    <img class="logo-light" src="static/img/logo-light.svg" title="" alt="">
+                </a>
+                <!-- Logo -->
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler ms-auto me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- End Mobile Toggle -->
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- <li class="dropdown nav-item">
+                            <a href="#home" class="nav-link">Home</a>
+                            <label class="px-dropdown-toggle mob-menu"></label>
+                            <ul class="dropdown-menu list-unstyled">
+                                <li><a class="dropdown-item" href="index.html">Home Option 1</a></li>
+                                <li><a class="dropdown-item" href="index-02.html">Home Option 2</a></li>
+                                <li><a class="dropdown-item" href="index-03.html">Home Option 3</a></li>
+                                <li><a class="dropdown-item" href="index-04.html">Home Option 4</a></li>
+                                <li><a class="dropdown-item" href="index-05.html">Home Option 5</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#features" class="nav-link">주요기능</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#type" class="nav-link">사용 업종</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#map" class="nav-link">오시는길</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#ask" class="nav-link">문의하기</a>
+                        </li>
+                        <!-- <li class="dropdown nav-item">
+                            <a href="#" class="nav-link">Pages</a>
+                            <label class="px-dropdown-toggle mob-menu"></label>
+                            <ul class="dropdown-menu list-unstyled">
+                                <li><a class="dropdown-item" href="about-us.html">About</a></li>
+                                <li><a class="dropdown-item" href="services.html">Services</a></li>
+                                <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="blog-detail.html">Blog Details</a></li>
+                                <li><a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </div>
+                <!-- End Menu -->
+
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+    <!-- Main -->
+    <main>
+        <!-- Home Banner -->
+        <section id="home" class="pt-10 effect-section">
+
+            <div class="container">
+                <div class="row justify-content-center section-heading">
+                    <div class="col-lg-8 col-xl-10 text-center">
+                        <h3 class="display-6 mb-4 pb-4 after-50 light-after text-white">메타플라이어는 온사이트(On-site)와 오프사이트(Off-site) 마케팅을 제공하는 맞춤형 콘텐츠 플랫폼 서비스입니다</h3>
+                        <div class="lead text-white col-lg-8" style="margin: 0 auto;">오프사이트 마케팅은 기업의 고객데이터(CRM, DW)나, 중소·소상공인의 고객정보들에서 다양한 타겟 유형으로 분류하고 대상에 따라 맞춤형 콘텐츠를 UMS, 앱 푸쉬, 메일, 기프티콘, SNS 등 여러 채널에 발송</div>
+                    </div>
+                </div>
+                <div class="tab-style-1 mt-3 white">
+                    <ul class="nav nav-fill nav-tabs">
+                        <li class="nav-item">
+                            <a href="#tab3_sec1" data-bs-toggle="tab" class="active">
+                                <div class="tb-icon"><i class="fas fa-mobile-alt"></i></div>
+                                <span>캠페인 카드</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#tab3_sec2" data-bs-toggle="tab">
+                                <div class="tb-icon"><i class="fas fa-comment"></i></div>
+                                <span>문자/메일/앱푸시</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#tab3_sec3" data-bs-toggle="tab">
+                                <div class="tb-icon"><i class="fas fa-envelope"></i></div>
+                                <span>메일</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#tab3_sec4" data-bs-toggle="tab">
+                                <div class="tb-icon"><i class="fas fa-gift"></i></div>
+                                <span>기프티콘</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#tab3_sec5" data-bs-toggle="tab">
+                                <div class="tb-icon"><i class="fas fa-poll-h"></i></div>
+                                <span>설문지 작성</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <!-- start tab content -->
+                        <div id="tab3_sec1" class="tab-pane fade active show">
+                            <img class="w-100" src="static/img/main_slide1.png" title="" alt="">
+                        </div>
+                        <!-- end tab content -->
+                        <!-- start tab content -->
+                        <div id="tab3_sec2" class="tab-pane fade in">
+                            <img class="w-100" src="static/img/main_slide2.png" title="" alt="">
+                        </div>
+                        <!-- end tab content -->
+                        <!-- start tab content -->
+                        <div id="tab3_sec3" class="tab-pane fade in">
+                            <img class="w-100" src="static/img/main_slide3.png" title="" alt="">
+                        </div>
+                        <!-- end tab content -->
+                        <!-- start tab content -->
+                        <div id="tab3_sec4" class="tab-pane fade in">
+                            <img class="w-100" src="static/img/main_slide4.png" title="" alt="">
+                        </div>
+                        <!-- end tab content -->
+                        <!-- start tab content -->
+                        <div id="tab3_sec5" class="tab-pane fade in">
+                            <img class="w-100" src="static/img/main_slide5.png" title="" alt="">
+                        </div>
+                        <!-- end tab content -->
+                    </div>
+                </div>
+            </div>
+            <div class="mask" style="background-image: url(static/img/main_bg.png); opacity: 100%;  width: 100%;
+            height: 100vh; background-position: center; background-repeat: no-repeat;  background-size: cover;
+            background-color: #7d04ff; z-index: -1;" >
+            </div>
+        </section>
+        <!-- End Home Banner -->
+        <!-- Section -->
+        <section id="features" class="section effect-section">
+            <div class="rounded-effect-1 bg-gray-100"></div>
+            <div class="container">
+                <div class="row justify-content-center section-heading">
+                    <div class="col-lg-8 col-xl-7 text-center">
+                        <!-- <div class="icon icon-warning-light icon-xl rounded-circle mb-4">
+                            <i class="bi bi-hdd-stack"></i>
+                        </div> -->
+                        <h3 class="display-6 after-50 primary-after pb-3 m-0 font-w-700">메타플라이어 
+                            <span style="color: #6800d8;">주요기능</span></h3>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-6 col-xl-5 my-3">
+                        <label class="text-primary mb-1">드래그 앤 드롭으로 쉽고 간단히</label>
+                        <h3 class="mb-4 h2 font-w-600">캠페인 카드 제작</h3>
+                        <p class="lead mb-5">메타플라이어는 템플릿 빌더로 구성 된 캠페인카드 제작 기능을 지원합니다.
+                            드래그앤 드롭 방식으로 디자인 간편하게 제작이 가능하고 UMS, SNS, 앱푸시, 설문지 각 유형별로 제공합니다.           
+
+                        </p>
+                        <!-- <div class="border-top d-flex pt-5 align-items-center">
+                            <div class="icon icon-lg icon-warning rounded-circle">
+                                <i class="bi bi-credit-card-2-back"></i>
+                            </div>
+                            <div class="col ps-3">
+                                <h5 class="font-w-500 mb-1">Improve communication skills</h5>
+                                <a class="font-w-500" href="#">Learn more about <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="col-lg-6 my-3">
+                        <img class="img-lg-140" src="static/img/function1.png" title="" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+
+                <!-- Section -->
+                <section class="section effect-section pt-0">
+                    <div class="rounded-effect-2 bg-gray-100"></div>
+                    <div class="container">
+                        <div class="row align-items-center justify-content-between flex-row-reverse">
+                            <div class="col-lg-6 col-xl-5 my-3">
+                                <label class="text-primary mb-1">쉬운 템플릿 제공&제작</label>
+                                <h3 class="mb-4 h2 font-w-600">템플릿 제작</h3>
+                                <p class="lead mb-5">디자인 감각이 없다고 걱정하지마세요.
+                                    메타플라이어는 다양한 유형의 캠페인카드의 템플릿을 제공하고, 사용자가 만든 템플릿을 공유받아 사용가능합니다.
+                                </p>
+                                <!-- <div class="border-top d-flex pt-5 align-items-center">
+                                    <div class="icon icon-lg icon-warning rounded-circle">
+                                        <i class="bi bi-credit-card-2-back"></i>
+                                    </div>
+                                    <div class="col ps-3">
+                                        <h5 class="font-w-500 mb-1">Improve communication skills</h5>
+                                        <a class="font-w-500" href="#">Learn more about <i class="fas fa-long-arrow-alt-right"></i></a>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="col-lg-6 my-3">
+                                <img class="img-lg-140 float-lg-end" src="static/img/function2.png" title="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        <!-- End Section -->
+
+        
+        <!-- Section -->
+        <section class="section effect-section">
+            <div class="rounded-effect-1 bg-gray-100"></div>
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-6 col-xl-5 my-3">
+                        <label class="text-primary mb-1">고객 DB 원클릭정리</label>
+                        <h3 class="mb-4 h2 font-w-600">연락처 정리</h3>
+                        <p class="lead mb-5">메타플라이어는 스프레드시트의 형식으로 대량의 연락처편집이 가능해요.
+                        연락처 소팅으로 한눈에 펼치고 연락처 편집, 앞/뒤글자 추가/삭제 일괄편집 등 다양한 기능을 제공합니다.
+                        </p>
+                        <!-- <div class="border-top d-flex pt-5 align-items-center">
+                            <div class="icon icon-lg icon-warning rounded-circle">
+                                <i class="bi bi-credit-card-2-back"></i>
+                            </div>
+                            <div class="col ps-3">
+                                <h5 class="font-w-500 mb-1">Improve communication skills</h5>
+                                <a class="font-w-500" href="#">Learn more about <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="col-lg-6 my-3">
+                        <img class="img-lg-140" src="static/img/function3.png" title="" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+
+                <!-- Section -->
+                <section class="section effect-section pt-0">
+                    <div class="rounded-effect-2 bg-gray-100"></div>
+                    <div class="container">
+                        <div class="row align-items-center justify-content-between flex-row-reverse">
+                            <div class="col-lg-6 col-xl-5 my-3">
+                                <label class="text-primary mb-1">피드백 트래팅 최적화</label>
+                                <h3 class="mb-4 h2 font-w-600">통계</h3>
+                                <p class="lead mb-5">메시지를 전송 한 순간부터 메타플라이어를 통해 지표를 볼 수 있어요.
+                                    몇명에게 보냈는지, 누가 읽었는지, 어딜 클릭했는지 확인이 가능해요.
+                                </p>
+                                <!-- <div class="border-top d-flex pt-5 align-items-center">
+                                    <div class="icon icon-lg icon-warning rounded-circle">
+                                        <i class="bi bi-credit-card-2-back"></i>
+                                    </div>
+                                    <div class="col ps-3">
+                                        <h5 class="font-w-500 mb-1">Improve communication skills</h5>
+                                        <a class="font-w-500" href="#">Learn more about <i class="fas fa-long-arrow-alt-right"></i></a>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="col-lg-6 my-3"'>
+                                <img class="img-lg-140 float-lg-end" src="static/img/function4.png" title="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        <!-- End Section -->
+                <!-- Section -->
+                <section class="section">
+                    <div class="container">
+                        <div class="row justify-content-center section-heading">
+                            <div class="col-lg-8 col-xl-7 text-center">
+                                <h3 class="display-6 after-50 primary-after pb-3 m-0  font-w-700">타겟 마케팅이 편리한 <span style="color: #6800d8;">메타플라이어</span></h3>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="video-wrap">
+                                    <iframe id="video" width="100%" height="315" src="https://www.youtube.com/embed/fq6kI35Kfmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 15px;">
+                                </div>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+        <!-- Section -->
+        <!-- <section class="section pb-3 effect-section">
+            <div class="mask mask-80 bg-center bg-cover bg-no-reapet bg-center" style="background-image: url(static/img/video_bg2.jpg);"></div>
+            <div class="container position-relative">
+                <div class="row justify-content-center section-heading">
+                    <div class="col-lg-8 col-xl-7 text-center">
+                        <h3 class="display-5 after-50 light-after pb-4 mb-4 text-white">타겟 마케팅을 위한 자동화 캠페인</h3>
+                        <div class="lead text-white">메타플라이어는 자동으로 세그먼트화 된 고객을 대상으로 초개인화마케팅을 진행합니다.
+                            이제 특정 고객을 대상으로 적절한 시점에 고객이 원하는 메시지를 보내보세요!
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="bg-center bg-cover bg-no-reapet rounded shadow py-14 px-5 text-center" style="background-image: url(static/img/video.png);">
+                            <a class="icon icon-xl icon-light rounded-circle video-btn mb-4" href="https://www.youtube.com/watch?v=fq6kI35Kfmg"><span class="fas fa-play"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- End Section -->
+
+                <!-- Section -->
+                <section id="type" class="section">
+                    <div class="container">
+                        <div class="row justify-content-center section-heading">
+                            <div class="col-lg-8 col-xl-7 text-center">
+                                <h3 class="display-6 after-50 primary-after pb-3 m-0 font-w-700">메타플라이어 <span style="color: #6800d8;">사용 업종</span></h3>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-5 my-3">
+                                <div class="py-5 px-3 px-lg-6 shadow shadow-hover rounded-3 hover-top text-left bg-white">
+                                    <div class="pb-3">
+                                        <img src="static/img/type1.jpg" title="" alt="">
+                                    </div>
+                                    <h4 class="mb-3">대기업</h4>
+                                    <p>다양한 서비스에 흩어져 있는 고객 DB를 세그먼트화 하여 초개인화마케팅통해 적절한시점에 개인화 된 메시지를 전송합니다.</p>
+                                    <!-- <div class="pt-2">
+                                        <a class="btn btn-primary" href="#">Get Start </a>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="col-lg-5 my-3">
+                                <div class="py-5 px-3 px-lg-6 shadow shadow-hover rounded-3 hover-top text-left bg-white">
+                                    <div class="pb-3">
+                                        <img src="static/img/type2.jpg" title="" alt="">
+                                    </div>
+                                    <h4 class="mb-3">중견/중소기업</h4>
+                                    <p>메타플라이어를 이용하면 디자인/마케팅 팀 없이 소수 인력으로 콘텐츠 제작과 마케팅 캠페인을 진행 할 수있습니다.<br></p>
+                                    <!-- <div class="pt-2">
+                                        <a class="btn btn-primary" href="#">Get Start </a>
+                                    </div> -->
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5 my-3">
+                                <div class="py-5 px-3 px-lg-6 shadow shadow-hover rounded-3 hover-top text-left bg-white">
+                                    <div class="pb-3">
+                                        <img src="static/img/type3.jpg" title="" alt="">
+                                    </div>
+                                    <h4 class="mb-3">개인사업자</h4>
+                                    <p>모바일에 최적화 된 사용자경험을 제공하여 개인사업자들도 고객에게 타겟마케팅을 할 수 있습니다.</p>
+                                    <!-- <div class="pt-2">
+                                        <a class="btn btn-primary" href="#">Get Start </a>
+                                    </div> -->
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-5 my-3">
+                                <div class="py-5 px-3 px-lg-6 shadow shadow-hover rounded-3 hover-top text-left bg-white">
+                                    <div class="pb-3">
+                                        <img src="static/img/type4.jpg" title="" alt="">
+                                    </div>
+                                    <h4 class="mb-3">소상공인</h4>
+                                    <p>소상공인을 위해 마케팅의 개념과 집행의 이해를 도우며 특정 고객에게 원하는 형태의 메시지를 쉽게 제작하여 전송합니다.</p>
+                                    <!-- <div class="pt-2">
+                                        <a class="btn btn-primary" href="#">Get Start </a>
+                                    </div> -->
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <!-- End Section -->    
+                <!-- Section -->
+                <section id="map" class="section mb-10">
+                    <div class="container">
+                        <div class="row justify-content-center section-heading">
+                            <div class="col-lg-8 col-xl-7 text-center">
+                                <h3 class="display-6 after-50 primary-after pb-3 mb-4 font-w-700">오시는 길</h3>
+                                <!-- <div class="lead">메타플라이어 본사는 제주도에 위치해있습니다.<br>
+                                제주특별자치도 제주시 관덕로 36. 메타플라이어 5F</div> -->
+                            </div>
+                        </div>
+                    <div class="col-lg-10" style="margin: 0 auto;">
+                        <div class="video-wrap">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.5579078211267!2d126.5209070156994!3d33.512877480756345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350ce35588659793%3A0xf8ccf5ec71504894!2z7KCc7KO87Yq567OE7J6Q7LmY64-EIOygnOyjvOyLnCDqtIDrjZXroZwgMzY!5e0!3m2!1sko!2skr!4v1650260994075!5m2!1sko!2skr" width="100%" height="315" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+                        </div>
+                    <!-- <div class="row">
+                        <div class="map-box">
+                            <div class="row map-box-info">
+                            <div class="col-lg-3 map-info-adress justify-content-center">
+                                <img src="static/img/logo.svg" title="" alt="">
+                            </div>
+
+                            <div class="col-lg-6 map-info-adress">
+                                제주특별자치도 제주시 관덕로 36. 일해빌딩 5F
+                                <br>
+                                <b>Mail: </b>ask@metaflyer.com
+                                <b>TEL: </b>02-3459-9600</div>
+                        </div>
+                    </div>
+                    </div> -->
+                </div>
+
+                    </div>
+                </section>
+                <!-- End Section -->        
+                <!-- Section -->
+                <section id="ask" class="section effect-section bg-black py-12">
+            <div class="mask" style="background-image: url(static/img/effect/ionhompage_contact.jpg); opacity: 90%;
+            width: 100%; height: 100vh; background-position: center; background-repeat: no-repeat;  background-size: cover;"></div>
+            <div class="container position-relative text-white">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-10 text-center">
+                        <h4 class="display-6 light-afte">메타플라이어로 마케팅 서비스를 시작해보세요</h4>
+                        <p class="read mt-3 mb-4 font-w-300">아시아 문화권에 맞는 사용성, 다국어 지원, 24시간내 고객 응대, 결제 서비스까지 철저한 현지화로 아시아 고객에게 다가가고 있습니다.</p>
+                        <input type="button" class="askbutton" value="문의하기" onClick="window.open('http://www.i-on.net')"></input>
+                        <!-- <form class="d-flex flex-row mb-2 p-1 bg-white input-group">
+                            <input type="email" class="form-control rounded-0 border-0" placeholder="you@yoursite.com">
+                            <button class="btn btn-primary rounded-0 flex-shrink-0" type="submit">Get Started</button>
+                        </form> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+    </main>
+    <!-- End Main -->
+    <!-- Footer -->
+    <footer class="bg-gray-100 footer">
+        <div class="footer-top" style="background: #333333;;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 mt-10" style="text-align: left;">
+                        <img src="static/img/logo-light.svg" title="" alt="">
+                        <!-- <p class="mt-3 w-lg-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                        <div class="nav justify-content-center justify-content-md-start pt-1">
+                            <a class="icon icon-sm icon-primary rounded me-2" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="icon icon-sm icon-primary rounded me-2" href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="icon icon-sm icon-primary rounded me-2" href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a class="icon icon-sm icon-primary rounded me-2" href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div> -->
+                    </div>
+                    <!-- <div class="col-sm-6 col-lg-2 my-4">
+                        <h5 class="mb-3">Customer</h5>
+                        <ul class="list-unstyled dark-link footer-links">
+                            <li>
+                                <a href="#">Apps Store</a>
+                            </li>
+                            <li>
+                                <a href="#">Google Store</a>
+                            </li>
+                            <li>
+                                <a href="#">Latest News</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Help center</a>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <!-- <div class="col-sm-6 col-lg-2 my-4">
+                        <h5 class="mb-3">Product</h5>
+                        <ul class="list-unstyled dark-link footer-links">
+                            <li>
+                                <a href="#">Apps Store</a>
+                            </li>
+                            <li>
+                                <a href="#">Google Store</a>
+                            </li>
+                            <li>
+                                <a href="#">Latest News</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Help center</a>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <!-- <div class="col-sm-6 col-lg-2 my-4">
+                        <h5 class="mb-3">Company</h5>
+                        <ul class="list-unstyled dark-link footer-links">
+                            <li>
+                                <a href="#">Apps Store</a>
+                            </li>
+                            <li>
+                                <a href="#">Google Store</a>
+                            </li>
+                            <li>
+                                <a href="#">Latest News</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Help center</a>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <!-- <div class="col-sm-6 col-lg-3 my-4">
+                        <h5 class="mb-5">Contact Us</h5>
+                        <ul class="list-unstyled dark-link footer-links">
+                            <li>
+                                <a href="#" class="media">
+                                    <div class="only-icon only-icon-sm rounded-circle">
+                                        <i class="bi bi-map"></i>
+                                    </div>
+                                    <span class="media-body ps-3">
+                                        301 The Greenhouse, <br>Custard Factory, LD, E2 8DY
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="media align-items-center">
+                                    <div class="only-icon only-icon-sm rounded-circle">
+                                        <i class="bi bi-envelope"></i>
+                                    </div>
+                                    <span class="media-body ps-3">
+                                        info@domain.com
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="media align-items-center">
+                                    <div class="only-icon only-icon-sm rounded-circle">
+                                        <i class="bi bi-phone"></i>
+                                    </div>
+                                    <span class="media-body ps-3">
+                                        1-800-222-000
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom" style="background: #333333; height: 200px;">
+            <div class="container">
+                <div class="row align-items-center py-2">
+                    <div class="col-md-9 my-1">
+                        <p style="font-size: 14px; color: #c8c8c8; letter-spacing: 0; line-height: 26px;">
+                            (주)메타플라이어
+                            <br>
+                            제주특별자치도 제주시 관덕로 36, 일해빌딩 5F
+                            <br>
+                            <b>대표이사</b>
+                            조재호
+                            <br>
+                            <b>전화</b>
+                            02-3430-1200
+                            <b>이메일</b>
+                            ask@metaflyer.co.kr
+                            </p>
+                    </div>
+                    <!-- <div class="col-md-3 my-1 text-center text-md-end small">
+                        <p class="m-0" style="font-size: 14px; color: #c8c8c8; letter-spacing: 0;">© 2021 copyright Metaflyer</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- jquery -->
+    <script src="static/js/jquery-3.5.1.min.js"></script>
+    <!-- appear -->
+    <script src="static/vendor/appear/jquery.appear.js"></script>
+    <!--bootstrap-->
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- countTo -->
+    <script src="static/vendor/counter/jquery.countTo.js"></script>
+    <!-- typed -->
+    <script src="static/vendor/typed/typed.js"></script>
+    <!-- owl-carousel -->
+    <script src="static/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+    <!-- magnific -->
+    <script src="static/vendor/magnific/jquery.magnific-popup.min.js"></script>
+    <!-- isotope -->
+    <script src="static/vendor/isotope/isotope.pkgd.min.js"></script>
+    <!-- svg-injector -->
+    <script src="static/vendor/svginjector/svg-injector.min.js"></script>
+    <!-- jarallax -->
+    <script src="static/vendor/jarallax/jarallax-all.js"></script>
+    <!-- working form -->
+    <script src="static/vendor/mail/js/form.min.js"></script>
+    <script src="static/vendor/mail/js/script.js"></script>
+    <!-- Theme Js -->
+    <script src="static/js/custom.js"></script>
+</body>
+<!-- end body -->
+
+</html>
