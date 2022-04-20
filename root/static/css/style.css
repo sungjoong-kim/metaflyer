@@ -18449,7 +18449,7 @@ article blockquote + .h5 {
   }
   .header-main .navbar-expand-lg .navbar-nav .nav-item > .nav-link {
     padding: 15px;
-    color: #233d63;
+    color: #333333;
   }
   .header-main .navbar-expand-lg .navbar-nav .nav-item .dropdown-menu {
     background: #f5f6ff;
@@ -18689,4 +18689,9 @@ article blockquote + .h5 {
 }
 .footer .footer-border.dark {
   border-top: 1px solid rgba(35, 61, 99, 0.1);
+}
+
+.footer-bottom {
+  background: #333333;
+  height: 250px;
 }
